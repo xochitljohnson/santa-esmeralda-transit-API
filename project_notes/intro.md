@@ -24,3 +24,5 @@ One of the reasons why these technologies were chosen in the first place were th
 - **EJS:** To render templates and views
 - **Bootstrap:** This will be used in the public user dashboard.
 - **Vanilla JS:** Or jQuery if I'm feeling funky.
+
+Roadmap: once the REST API is finished, and the v1 of the frontend is done, I’d like to implement some sort of visualization or “creative coding” into the mix. Either in the landing page of the project or perhaps a visualization of the transit in motion.
