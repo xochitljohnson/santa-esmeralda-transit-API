@@ -1,0 +1,25 @@
+{
+  "name": "santa-esmeralda-transit-api",
+  "version": "1.0.0",
+  "description": "A portfolio project for REST API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xochitljohnson/santa-esmeralda-transit-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xochitljohnson/santa-esmeralda-transit-API/issues"
+  },
+  "homepage": "https://github.com/xochitljohnson/santa-esmeralda-transit-API#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
