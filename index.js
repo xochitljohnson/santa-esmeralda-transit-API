@@ -1,3 +1,4 @@
+// App initialization
 const express = require('express');
 
 const app = express();
