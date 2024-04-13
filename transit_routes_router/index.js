@@ -9,7 +9,7 @@ router.get('/:id', (req, res) => res.send(`Transit routes by ID:${req.params.id}
 
 
 
-// Admin only paths
+// Admin only paths - eventually
 
 router.post('/');
 
