@@ -9,7 +9,9 @@ const transit_routes = require('./transit_routes_router/index')
 app.use('/routes', transit_routes)
 
 // Serve landing page
-app.get('/', (req, res) => res.send('Hello world')).listen(PORT)
+app.get('/', (req, res) => res.render('index', {}))
+
+app.listen(PORT)
 
 // Obligatory console log
 console.log(`Listening on port: ${PORT}`)
