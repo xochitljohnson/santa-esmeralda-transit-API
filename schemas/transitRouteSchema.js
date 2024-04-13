@@ -5,3 +5,4 @@ const transitRouteSchema = new mongoose.Schema({
     name: String,
     description: String
 })
+
