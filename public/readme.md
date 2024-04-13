@@ -1,0 +1,1 @@
+This page is to test POST, PUT and DELETE requests. I plan on keeping a "customer portal" of sorts so this eventually operate as such.
