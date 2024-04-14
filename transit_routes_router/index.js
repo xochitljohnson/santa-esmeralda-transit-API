@@ -1,11 +1,17 @@
 const express = require('express');
 const router = express.Router();
+const db = require('../db/db.json');
+
+
 
 // GET all routes
-router.get('/', (req, res) => res.send('this is where Transit Routes info will go'));
+router.get('/', (req, res) => {
+   res.json(db)
+    
+});
 
 // GET routes by ID
-router.get('/:id', (req, res) => res.send(`Transit routes by ID:${req.params.id}`));
+router.get('/:id', (req, res) => res.send(`hello by id: ${req.params.id}`))
 
 
 
