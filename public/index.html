@@ -1,19 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santa Esmeralda Transit</title>
-</head>
-<body>
-    <main>
-        <!-- Show all routes -->
-    </main>
-    <form action="POST">
-       <div class="form-control">
-        <!-- Button to show by ID -->
-       </div>
-    </form>
-    
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Santa Esmeralda Transit API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="STE Transit API Navbad">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">STE Transit API</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="d-flex flex-column mb-3">
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Show all transit routes</h5>
+                      <span class="badge text-bg-info">Public Access</span>
+                      <code>GET /routes</code>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>         
+                    </div>
+                  </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Show transit route by ID</h5>
+                      <span class="badge text-bg-info">Public Access</span>
+                     <code>GET /route/:id</code>
+                      <p class="card-text">Insert description of the id, rate limit, etc</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Update stop times</h5>
+                      <span class="badge text-bg-warning">Admin Only</span>
+                      <code>PUT /route/:id/stop/:id</code>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta molestiae consequuntur dicta a, ex optio iste facilis quisquam alias?</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Add new stop to existing transit line</h5>
+                      <span class="badge text-bg-warning">Admin Only</span>
+                      <code>POST /route/:id/stop/:id</code>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque similique ullam quia. Doloremque mollitia perspiciatis unde laborum consequatur? Asperiores debitis iste fuga eos quis sed tenetur, laudantium molestias provident libero dolores? Doloremque, hic voluptate quam temporibus impedit qui aspernatur velit.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Remove stop </h5>
+                      <span class="badge text-bg-danger">Admin Only By Request</span>
+                      
+                      <code>DELETE /route/:id</code>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minima placeat, saepe, repellat aliquam eveniet tempore ipsum tenetur, quasi officia sint ea reiciendis eligendi nemo fuga excepturi quisquam molestias quis! Ea voluptatem odio rerum! Praesentium cumque sequi exercitationem modi expedita quidem minus aut voluptas, placeat, at omnis asperiores repellat ipsa?</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
