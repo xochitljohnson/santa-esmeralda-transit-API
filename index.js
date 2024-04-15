@@ -1,5 +1,5 @@
 // App initialization
-const PORT = 3000;
+require('dotenv').config({path:'./config.env'})
 const path = require('path');
 const express = require('express');
 const app = express();
@@ -14,7 +14,7 @@ app.use('/routes', transit_routes)
 // Serve landing page
 app.get('/', (req, res) => res.render('index'))
 
-app.listen(PORT)
+app.listen(process.env.PORT)
 
 // Obligatory console log
-console.log(`Listening on port: ${PORT}`)
+console.log(`Listening on port: ${process.env.PORT}`)
