@@ -9,7 +9,7 @@ const transit_routes = require('./transit_routes_router/index');
 
 app.use(express.static(path.join(__dirname,'/public')))
 
-app.use('/routes', transit_routes)
+app.use('/api/v1/transit-routes', transit_routes)
 
 // Serve landing page
 app.get('/', (req, res) => res.render('index'))
