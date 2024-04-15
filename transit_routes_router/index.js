@@ -2,8 +2,6 @@
 const express = require('express');
 const {getTrasitRoutes} = require('../controllers/transitRoutes')
 const router = express.Router();
-const db = require('../db/db.json');
-
 
 
 // GET all routes
