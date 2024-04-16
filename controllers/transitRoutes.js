@@ -16,14 +16,14 @@ exports.getTransitRoute = (req, res, next) => {
 // @route POST /api/v1/transit-routes/
 // @access Admin
 exports.addTransitRoute = (req, res, next) => {
-    res.status(200).json({success:true, message:"New resource created",route:`${res.body}`})
+    res.status(201).json({success:true, message:"New resource created",route:`${res.body}`})
 }
 
 // @desc Update transit route
 // @route PUT /api/v1/transit-routes/:id
 // @access Admin
 exports.updateTransitRoute = (req, res, next) => {
-    res.status(201).json({success:true, message:`Route updated ${req.params.id}`})
+    res.status(204).json({success:true, message:`Route updated ${req.params.id}`})
 }
 
 // @desc Delete transit routes
